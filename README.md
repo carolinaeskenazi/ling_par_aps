@@ -78,10 +78,11 @@ var agua_pronta: bool;
 
 temperatura := 90;
 agua_pronta := true;
-```
+
 
 if agua_pronta = true then
     aquecer(temperatura);
     fazer_cafe("expresso");
     print("Café expresso pronto!");
 end
+```
