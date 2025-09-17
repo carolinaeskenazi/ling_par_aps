@@ -4,6 +4,7 @@ A VM que escolhi é de uma máquina de café, em que o usuario seleciona a opç�
 
 # Linguagem estruturada segundo a EBNF:
 
+```bash
 program ::= { statement } ;
 
 statement ::= var_decl
@@ -68,7 +69,7 @@ letter ::= "A" | "B" | ... | "Z"
 digit ::= "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
 
 character ::= ? qualquer caractere visível, exceto aspas duplas ? ;
-
+```
 
 # Exemplo - Fazer um expresso:
 
