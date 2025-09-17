@@ -72,12 +72,13 @@ character ::= ? qualquer caractere visível, exceto aspas duplas ? ;
 ```
 
 # Exemplo - Fazer um expresso:
-
+```bash
 var temperatura: int;
 var agua_pronta: bool;
 
 temperatura := 90;
 agua_pronta := true;
+```
 
 if agua_pronta = true then
     aquecer(temperatura);
