@@ -1,0 +1,7 @@
+# Exemplo 1: Café Expresso Simples
+var temperatura: int;
+temperatura := 90;
+
+aquecer(90);
+fazer_cafe("expresso");
+print("Feito!");

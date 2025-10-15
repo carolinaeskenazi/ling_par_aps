@@ -1,0 +1,9 @@
+# Exemplo 2: Cappuccino com leite
+var leite: int;
+leite := 5;
+
+despejar("leite");
+misturar(5);
+esperar(3);
+fazer_cafe("cappuccino");
+print("Cappuccino pronto!");

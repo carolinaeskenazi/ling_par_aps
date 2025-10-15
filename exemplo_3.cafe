@@ -1,0 +1,6 @@
+# Exemplo 3: Sensor de temperatura e armazenamento
+var temp_sensor: sensor;
+var temperatura: int;
+
+ler_sensor(temp_sensor);
+temperatura := 92;
