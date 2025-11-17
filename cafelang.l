@@ -15,10 +15,14 @@ string      \"([^"])*\"
 "bool"          { return BOOL; }
 "sensor"        { return SENSOR; }
 
+"true"          { yylval.num = 1; return NUM; }
+"false"         { yylval.num = 0; return NUM; }
+
 "if"            { return IF; }
 "then"          { return THEN; }
 "else"          { return ELSE; }
 "end"           { return END; }
+
 "while"         { return WHILE; }
 "do"            { return DO; }
 
@@ -36,7 +40,6 @@ string      \"([^"])*\"
 ":="            { return ATRIB; }
 ":"             { return ':'; }
 ";"             { return ';'; }
-","             { return ','; }
 "("             { return '('; }
 ")"             { return ')'; }
 
@@ -46,18 +49,14 @@ string      \"([^"])*\"
 ">="            { return GE; }
 "<"             { return '<'; }
 ">"             { return '>'; }
-"+"             { return '+'; }
-"-"             { return '-'; }
-"*"             { return '*'; }
-"/"             { return '/'; }
 
 {id}            { yylval.str = strdup(yytext); return ID; }
 {digit}+        { yylval.num = atoi(yytext); return NUM; }
 {string}        { yylval.str = strdup(yytext); return STRING; }
 
-\#[^\n]*        { /* ignora comentários começando com '#' */ }
+\#[^\n]*        { /* ignora comentários com '#' */ }
+[ \t\n\r]+      { /* ignora espaços */ }
 
-[ \t\n]+        { /* ignora espaços */ }
 .               { printf("Caractere inválido: %s\n", yytext); }
 
 %%

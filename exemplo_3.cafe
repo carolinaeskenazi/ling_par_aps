@@ -1,6 +1,11 @@
 # Exemplo 3: Sensor de temperatura e armazenamento
-var temp_sensor: sensor;
-var temperatura: int;
+var agua_pronta : int;
+agua_pronta := 1;
 
-ler_sensor(temp_sensor);
-temperatura := 92;
+if agua_pronta = 1 then
+    aquecer(85);
+    fazer_cafe("cappuccino");
+    print("Cappuccino pronto!");
+else
+    alerta("Água fria!");
+end

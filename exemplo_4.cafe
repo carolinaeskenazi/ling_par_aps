@@ -1,0 +1,7 @@
+# Exemplo com WHILE
+var contador : int;
+contador := 0;
+
+while contador < 3 do
+    print("Loop!");
+end

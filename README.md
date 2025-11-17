@@ -86,3 +86,4 @@ if agua_pronta = true then
     print("Café expresso pronto!");
 end
 ```
+📄 [Documentação em PDF da APS](./CafeLang_APS_Carolina_Eskenazi.pdf)
